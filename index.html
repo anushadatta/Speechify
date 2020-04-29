@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- External CSS -->
     <link rel="stylesheet" href="styles/styles.css">
+
     <title>Speechify</title>
 </head>
 
-<body class="bg-info text-white">
+<body class="text-white">
     <div class="container text-center">
         <img src="assets/SPEECHIFY.png" alt="Speechify Logo">
         <div class="row">
@@ -24,7 +26,7 @@
                         <div class="form-group">
                             <label for="rate">Speech Rate</label>
                             <div id="rate-value" class="float-right border border-light px-2">1</div>
-                            <input type="range" id="rate" class="custom-range slider" min="0" max="2" value="1" step="0.1">
+                            <input type="range" id="rate" class="custom-range slider" min="0.5" max="2" value="1" step="0.1">
                         </div>
                         <!-- Speech Pitch -->
                         <div class="form-group">
@@ -34,7 +36,7 @@
                         </div>
                         <!-- Voices drop down -->
                         <div class="form-group">
-                            <select id="voice-select" class="form-control mb-4"></select>
+                            <select id="voice-select" class="form-control mb-4"> </select>
                         </div>
                         <!-- Convert to Speech button -->
                         <button id="synthesize" class="btn btn-light btn-block">SYNTHESIZE SPEECH</button>
